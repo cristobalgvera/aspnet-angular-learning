@@ -1,4 +1,6 @@
-﻿using System;
+﻿using System.Collections.Generic;
+using System.Linq;
+using static System.Console;
 
 namespace console_app
 {
@@ -6,38 +8,40 @@ namespace console_app
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("How many outputs do you want?");
-
-            var outputsAmount = Convert.ToInt16(Console.ReadLine());
-
-            for (var exponent = 1; exponent <= outputsAmount; exponent++)
+            var friends = new List<string>
             {
-                var result = Math.Pow(2, exponent);
-                Console.WriteLine($"2^{exponent} = {result}");
+                "Daniela",
+                "Rene"
+            };
+
+            string[] languages =
+            {
+                "C#",
+                "Java",
+                "JavaScript",
+                "TypeScript",
+                "Python"
+            };
+
+
+            friends.ForEach(WriteLine);
+            
+            friends.Add("Cristóbal");
+            friends.ForEach(WriteLine);
+
+            friends.Remove("Rene");
+            friends.ForEach(WriteLine);
+
+            for (var index = 0; index < languages.Length; index++)
+            {
+                var language = languages[index];
+                WriteLine($"{index + 1}. {language}");
             }
 
-            var diceSum = 0;
-            int diceValue;
-            var random = new Random();
-
-            // while (diceValue > 1)
-            // {
-            //     diceValue = random.Next(1, 7);
-            //     Console.WriteLine($"Dice: {diceValue}");
-            //     diceSum += diceValue;
-            // }
-
-            Console.WriteLine("Press enter to roll the dice until dice been 1");
-
-            do
-            {
-                Console.ReadKey();
-                diceValue = random.Next(1, 7);
-                Console.WriteLine($"Dice: {diceValue}");
-                diceSum += diceValue;
-            } while (diceValue > 1);
-
-            Console.WriteLine($"Dice values sum: {diceSum}");
+            languages
+                .Where(language => language.Contains("Java"))
+                .ToList()
+                .ForEach(WriteLine);
         }
     }
 }
