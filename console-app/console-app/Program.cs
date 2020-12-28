@@ -6,80 +6,38 @@ namespace console_app
     {
         public static void Main(string[] args)
         {
-            Console.Title = "Skynet!";
-            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("How many outputs do you want?");
 
-            const int someNumber = 3;
+            var outputsAmount = Convert.ToInt16(Console.ReadLine());
 
-            Console.WriteLine($"Hello World! Number: {someNumber}");
-            Console.WriteLine("What's your name?");
-
-            var name = Console.ReadLine();
-
-            Console.WriteLine($"Hello {(!string.IsNullOrEmpty(name) ? name : "user")}");
-
-            Console.WriteLine("Write a number below :)");
-            var consoleNumber = 0.0;
-
-            try
+            for (var exponent = 1; exponent <= outputsAmount; exponent++)
             {
-                consoleNumber = Convert.ToDouble(Console.ReadLine());
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
+                var result = Math.Pow(2, exponent);
+                Console.WriteLine($"2^{exponent} = {result}");
             }
 
-            Console.ForegroundColor = ConsoleColor.Magenta;
+            var diceSum = 0;
+            int diceValue;
+            var random = new Random();
 
-            // Inline conditional
-            Console.WriteLine(consoleNumber >= 13
-                ? $"{consoleNumber} / 3 = {consoleNumber / 3}"
-                : $"{consoleNumber} * 3 = {consoleNumber * 3}");
+            // while (diceValue > 1)
+            // {
+            //     diceValue = random.Next(1, 7);
+            //     Console.WriteLine($"Dice: {diceValue}");
+            //     diceSum += diceValue;
+            // }
 
-            // Multiline conditional
-            if (!string.IsNullOrEmpty(name))
-            {
-                Console.WriteLine("Name isn't empty, nice!");
-            }
-            else
-            {
-                Console.WriteLine("Name is empty, what a pity");
-            }
+            Console.WriteLine("Press enter to roll the dice until dice been 1");
 
-            if (!string.IsNullOrEmpty(name) && consoleNumber > 20)
+            do
             {
-                Console.WriteLine("Requirements passed");
-            }
-            else
-            {
-                Console.WriteLine("Requirements aren't passed");
-            }
+                Console.ReadKey();
+                diceValue = random.Next(1, 7);
+                Console.WriteLine($"Dice: {diceValue}");
+                diceSum += diceValue;
+            } while (diceValue > 1);
 
-            Console.WriteLine("Write a number between 1 and 5: ");
-            consoleNumber = Convert.ToDouble(Console.ReadLine());
-
-            switch (consoleNumber)
-            {
-                case 1:
-                    Console.WriteLine("One");
-                    break;
-                case 2:
-                    Console.WriteLine("Two");
-                    break;
-                case 3:
-                    Console.WriteLine("Three");
-                    break;
-                case 4:
-                    Console.WriteLine("Four");
-                    break;
-                case 5:
-                    Console.WriteLine("Five");
-                    break;
-                default:
-                    Console.WriteLine("Ups, wrong number");
-                    break;
-            }
+            Console.WriteLine($"Dice values sum: {diceSum}");
         }
     }
 }
