@@ -1,0 +1,16 @@
+D:\crist\Documents\Repositorios\aspnet-angular-learning\console-app\console-app\bin\Debug\net5.0\console-app.exe
+D:\crist\Documents\Repositorios\aspnet-angular-learning\console-app\console-app\bin\Debug\net5.0\console-app.deps.json
+D:\crist\Documents\Repositorios\aspnet-angular-learning\console-app\console-app\bin\Debug\net5.0\console-app.runtimeconfig.json
+D:\crist\Documents\Repositorios\aspnet-angular-learning\console-app\console-app\bin\Debug\net5.0\console-app.runtimeconfig.dev.json
+D:\crist\Documents\Repositorios\aspnet-angular-learning\console-app\console-app\bin\Debug\net5.0\console-app.dll
+D:\crist\Documents\Repositorios\aspnet-angular-learning\console-app\console-app\bin\Debug\net5.0\ref\console-app.dll
+D:\crist\Documents\Repositorios\aspnet-angular-learning\console-app\console-app\bin\Debug\net5.0\console-app.pdb
+D:\crist\Documents\Repositorios\aspnet-angular-learning\console-app\console-app\obj\Debug\net5.0\console-app.csprojAssemblyReference.cache
+D:\crist\Documents\Repositorios\aspnet-angular-learning\console-app\console-app\obj\Debug\net5.0\console-app.GeneratedMSBuildEditorConfig.editorconfig
+D:\crist\Documents\Repositorios\aspnet-angular-learning\console-app\console-app\obj\Debug\net5.0\console-app.AssemblyInfoInputs.cache
+D:\crist\Documents\Repositorios\aspnet-angular-learning\console-app\console-app\obj\Debug\net5.0\console-app.AssemblyInfo.cs
+D:\crist\Documents\Repositorios\aspnet-angular-learning\console-app\console-app\obj\Debug\net5.0\console-app.csproj.CoreCompileInputs.cache
+D:\crist\Documents\Repositorios\aspnet-angular-learning\console-app\console-app\obj\Debug\net5.0\console-app.dll
+D:\crist\Documents\Repositorios\aspnet-angular-learning\console-app\console-app\obj\Debug\net5.0\ref\console-app.dll
+D:\crist\Documents\Repositorios\aspnet-angular-learning\console-app\console-app\obj\Debug\net5.0\console-app.pdb
+D:\crist\Documents\Repositorios\aspnet-angular-learning\console-app\console-app\obj\Debug\net5.0\console-app.genruntimeconfig.cache
