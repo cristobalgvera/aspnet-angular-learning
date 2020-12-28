@@ -25,6 +25,7 @@ namespace server
             {
                 options.UseSqlite(_configuration.GetConnectionString("DefaultConnection"));
             });
+            services.AddCors();
             services.AddControllers();
             services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo {Title = "server", Version = "v1"}); });
         }
@@ -42,6 +43,8 @@ namespace server
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors(policy => policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:4200"));
 
             app.UseAuthorization();
 
