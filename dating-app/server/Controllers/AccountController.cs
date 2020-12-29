@@ -1,4 +1,5 @@
-﻿using System.Security.Cryptography;
+﻿using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -33,8 +34,26 @@ namespace server.Controllers
                 PasswordSalt = hmac.Key
             };
 
-            _context.Users.Add(user);
+            await _context.Users.AddAsync(user);
             await _context.SaveChangesAsync();
+
+            return user;
+        }
+
+        [HttpPost("login")]
+        public async Task<ActionResult<User>> Login(LoginDto loginDto)
+        {
+            var user = await _context.Users
+                .SingleOrDefaultAsync(user => user.UserName == loginDto.username);
+
+            if (user == null) return Unauthorized("Invalid credentials");
+
+            using var hmac = new HMACSHA512(user.PasswordSalt);
+
+            var computedHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(loginDto.password));
+
+            if (computedHash.Where((t, i) => t != user.PasswordHash[i]).Any())
+                return Unauthorized("Invalid credentials");
 
             return user;
         }
