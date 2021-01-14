@@ -1,0 +1,13 @@
+D:\crist\Documents\Repositorios\aspnet-angular-learning\console\console\bin\Debug\netcoreapp3.1\console.exe
+D:\crist\Documents\Repositorios\aspnet-angular-learning\console\console\bin\Debug\netcoreapp3.1\console.deps.json
+D:\crist\Documents\Repositorios\aspnet-angular-learning\console\console\bin\Debug\netcoreapp3.1\console.runtimeconfig.json
+D:\crist\Documents\Repositorios\aspnet-angular-learning\console\console\bin\Debug\netcoreapp3.1\console.runtimeconfig.dev.json
+D:\crist\Documents\Repositorios\aspnet-angular-learning\console\console\bin\Debug\netcoreapp3.1\console.dll
+D:\crist\Documents\Repositorios\aspnet-angular-learning\console\console\bin\Debug\netcoreapp3.1\console.pdb
+D:\crist\Documents\Repositorios\aspnet-angular-learning\console\console\obj\Debug\netcoreapp3.1\console.csprojAssemblyReference.cache
+D:\crist\Documents\Repositorios\aspnet-angular-learning\console\console\obj\Debug\netcoreapp3.1\console.AssemblyInfoInputs.cache
+D:\crist\Documents\Repositorios\aspnet-angular-learning\console\console\obj\Debug\netcoreapp3.1\console.AssemblyInfo.cs
+D:\crist\Documents\Repositorios\aspnet-angular-learning\console\console\obj\Debug\netcoreapp3.1\console.csproj.CoreCompileInputs.cache
+D:\crist\Documents\Repositorios\aspnet-angular-learning\console\console\obj\Debug\netcoreapp3.1\console.dll
+D:\crist\Documents\Repositorios\aspnet-angular-learning\console\console\obj\Debug\netcoreapp3.1\console.pdb
+D:\crist\Documents\Repositorios\aspnet-angular-learning\console\console\obj\Debug\netcoreapp3.1\console.genruntimeconfig.cache
