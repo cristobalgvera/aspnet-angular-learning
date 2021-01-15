@@ -1,43 +1,18 @@
 ﻿using System;
-using System.Diagnostics;
 
 namespace console
 {
-    class Program
+    internal class Program
     {
         public static void Main(string[] args)
         {
-            const string name = "I'm Cris";
-            var number = 3;
+            var myTuple = ("First", 10); 
 
-            Console.WriteLine(name + number);
+            Console.WriteLine(myTuple.Item1);
 
-            number = 5;
+            var (name, age) = ("Eduardo", 29);
 
-            Console.WriteLine(name + number);
-
-            var date = DateTime.Now;
-            const bool civilState = true;
-
-            Console.WriteLine(!civilState);
-            Console.WriteLine(date);
-
-            const State state = State.Active;
-
-            Console.WriteLine(state);
-
-            var isMeantToBeNull = CanBeNull();
-
-            Debug.Assert(isMeantToBeNull != null, nameof(isMeantToBeNull) + " != null");
-            Console.WriteLine(isMeantToBeNull);
+            Console.WriteLine($"I'm {name} and I have {age} years old");
         }
-
-        private static bool? CanBeNull() => new Random().Next(100) > 50 ? (bool?) null : true;
-    }
-
-    internal enum State
-    {
-        Active,
-        Inactive
     }
 }
