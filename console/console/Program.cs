@@ -6,24 +6,21 @@ namespace console
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Enter a number lower than 100");
+            Console.WriteLine("Enter 1 or 2");
             var number = int.Parse(Console.ReadLine()); // Will fail if no input
 
-            Console.WriteLine("While loop");
-
-            while (number <= 100)
+            switch (number)
             {
-                Console.WriteLine(number);
-                number++;
+                case 1:
+                    Console.WriteLine(number + 60);
+                    break;
+                case 2:
+                    Console.WriteLine(number);
+                    break;
+                default:
+                    Console.WriteLine("No valid input");
+                    break;
             }
-
-            Console.WriteLine("Do... While loop");
-
-            do
-            {
-                Console.WriteLine(number);
-                number++;
-            } while (number <= 130);
         }
     }
 }
