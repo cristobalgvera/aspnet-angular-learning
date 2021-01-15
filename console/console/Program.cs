@@ -17,6 +17,8 @@ namespace console
             // Usage of static methods
             Console.WriteLine($"Sum of three numbers: {Math.Sum(4, 6, 7)}");
             Console.WriteLine($"Subtraction of two numbers: {Math.Subtraction(4, 6)}");
+
+            Console.WriteLine(Math.CircleArea(1));
         }
 
         private class Person
@@ -26,8 +28,13 @@ namespace console
             public int Sum(int a, int b) => a + b;
         }
 
-        private class Math
+        private static class Math
         {
+            private const double PI = 3.1415;
+
+            public static double CircleArea(double radio) => radio * radio * PI;
+            public static double CircleArea(int radio) => radio * radio * PI;
+
             // Overload example
             public static int Sum(int a, int b) => a + b;
 
