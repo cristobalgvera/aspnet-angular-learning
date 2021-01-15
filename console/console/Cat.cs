@@ -2,8 +2,10 @@
 
 namespace console
 {
-    internal class Cat : IAnimal
+    internal class Cat : Animal, IAnimal
     {
         public void Talk() => Console.WriteLine("Miau");
+
+        public override void Noise() => Console.WriteLine("Cat noise");
     }
 }
