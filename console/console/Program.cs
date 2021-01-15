@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Threading;
+using System.Threading.Tasks;
 
 namespace console
 {
@@ -7,42 +7,19 @@ namespace console
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine(CalculateExecutionTime(SendMessage));
-            Console.WriteLine(CalculateExecutionTime(() => Thread.Sleep(500))); // Delegate can be an anonymous function
-
-            Func<int, int, bool> func = Equals; // To use a function that return a value as a variable
-            // var func = new Func<int, int, int>(Equals); -> A fancy way of doing above stuff
-
-            var result = func(5, 6);
-            Console.WriteLine(result);
-
-            Action<string> action = Greet; // To use a function that return VOID as a variable
-            // var action = new Action<string>(Greet); -> A fancy way of doing above stuff
-
-            action("Hello");
-
-            // An ugly way to make inline functions and store it in variables, but works well
-            var inLineAction = new Action<string>((string word) => Console.WriteLine($"Hello World! - {word}"));
-            var inLineFunc = new Func<int, int>((int number) => 4 + number);
-
-            inLineAction("YOUUU!");
-            Console.WriteLine(inLineFunc(5));
+            Console.WriteLine("Before async method");
+            MethodAsync();
+            Console.WriteLine("After async method");
+            Console.ReadLine(); // If you wait 2,5 seconds, async task will be done
         }
 
-        private delegate void DelegateExample(); // Used to provide a method (delegate) to a function as parameter
-
-        private static void SendMessage() => Thread.Sleep(1000);
-
-        private static double CalculateExecutionTime(DelegateExample delegateExample)
+        private static async void MethodAsync()
         {
-            var startingTime = DateTime.Now;
-            delegateExample();
-            var endingTime = DateTime.Now;
-            return (endingTime - startingTime).TotalMilliseconds;
+            Console.WriteLine("Inside async method");
+            await AwaitTask();
+            Console.WriteLine("Async task done");
         }
 
-        private static bool Equals(int a, int b) => a == b;
-
-        private static void Greet(string message) => Console.WriteLine(message);
+        private static Task AwaitTask() => Task.Delay(2500);
     }
 }
