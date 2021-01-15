@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace console
 {
@@ -7,16 +6,10 @@ namespace console
     {
         public static void Main(string[] args)
         {
-            try
-            {
-                var names = new List<string> { "Peter", "John", "Douglas" };
+            const int aNumber = 103;
 
-                Console.WriteLine(names[3]); // Index out of bounds
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
+            // Usage of extension method called "IsEven" for int objects
+            Console.WriteLine($"Number {aNumber} is {(aNumber.IsEven() ? "even" : "odd")}");
         }
     }
 }
