@@ -1,29 +1,69 @@
-﻿namespace console
+﻿using System;
+using System.Collections.Generic;
+
+namespace console
 {
     internal class Program
     {
         public static void Main(string[] args)
         {
-            var dog = new Dog();
-            var cat = new Cat();
+            var myCollection = new Collection<Person>();
 
-            // Interface contract method
-            DoAnimalTalk(dog);
-            DoAnimalTalk(cat);
+            myCollection.Add(new Person("John"));
 
-            // Interface default method
-            DoAnimalRun(dog);
-            DoAnimalRun(cat);
+            myCollection.List.ForEach(person => Console.WriteLine(person.Name));
 
-            // Abstract class abstract method
-            DoAnimalNoise(dog);
-            DoAnimalNoise(cat);
+            Console.WriteLine(myCollection.GetAtPosition(0).Name);
         }
 
-        private static void DoAnimalTalk(IAnimal animal) => animal.Talk();
+        private class Person
+        {
+            public Person(string name)
+            {
+                Name = name;
+            }
 
-        private static void DoAnimalRun(IAnimal animal) => animal.Run();
+            public string Name { get; set; }
+        }
 
-        private static void DoAnimalNoise(Animal animal) => animal.Noise();
+        private class Collection<T>
+        {
+            public List<T> List { get; set; }
+
+            public Collection()
+            {
+                List = new List<T>();
+            }
+
+            public void Add(T element) => List.Add(element);
+
+            public T GetAtPosition(int position)
+            {
+                try
+                {
+                    return List[position];
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                    throw;
+                }
+            }
+
+            public T Remove(int position)
+            {
+                try
+                {
+                    var element = List[position];
+                    List.RemoveAt(position);
+                    return element;
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                    throw;
+                }
+            }
+        }
     }
 }
