@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace console
 {
@@ -7,25 +6,34 @@ namespace console
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Enter a number");
-            var number = int.Parse(Console.ReadLine()); // Will fail if no input
+            var person = new Person("Allan");
 
-            for (var i = 0; i < number; i++)
-            {
-                var result = i * number;
-                Console.WriteLine($"{i} * {number} = {result}");
-            }
-
-            var namesList = new List<string> { "Jhon", "Peter", "Douglas" };
-
-            foreach (var name in namesList)
-            {
-                Console.WriteLine($"I'm {name}");
-            }
-
-            // LINQ way
-            namesList.ForEach(Console.WriteLine); // Just names
-            namesList.ForEach(name => Console.WriteLine($"I'm {name}")); // Same output as line 21
+            Console.WriteLine($"Name: {person.Name} - Age: {person.Age}");
         }
+    }
+
+    internal class Person
+    {
+        public Person()
+        {
+        }
+
+        public Person(string name)
+        {
+            this.Name = name;
+        }
+
+        public Person(string name, string lastName, int age, DateTime birthday)
+        {
+            Name = name;
+            LastName = lastName;
+            Age = age;
+            Birthday = birthday;
+        }
+
+        public string Name { get; set; }
+        public string LastName { get; set; }
+        public int Age { get; set; }
+        public DateTime Birthday { get; set; }
     }
 }
