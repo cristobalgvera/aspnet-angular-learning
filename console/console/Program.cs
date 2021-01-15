@@ -6,34 +6,20 @@ namespace console
     {
         public static void Main(string[] args)
         {
-            var person = new Person("Allan");
+            var person = new Person();
 
-            Console.WriteLine($"Name: {person.Name} - Age: {person.Age}");
+            var fullName = person.Concatenate("John", "Cage");
+
+            Console.WriteLine(fullName);
+
+            Console.WriteLine(person.Sum(4, 6));
         }
-    }
 
-    internal class Person
-    {
-        public Person()
+        private class Person
         {
-        }
+            public string Concatenate(string name, string lastName) => $"{name} {lastName}";
 
-        public Person(string name)
-        {
-            this.Name = name;
+            public int Sum(int a, int b) => a + b;
         }
-
-        public Person(string name, string lastName, int age, DateTime birthday)
-        {
-            Name = name;
-            LastName = lastName;
-            Age = age;
-            Birthday = birthday;
-        }
-
-        public string Name { get; set; }
-        public string LastName { get; set; }
-        public int Age { get; set; }
-        public DateTime Birthday { get; set; }
     }
 }
