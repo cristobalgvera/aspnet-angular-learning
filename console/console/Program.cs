@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace console
 {
@@ -8,17 +7,16 @@ namespace console
     {
         public static void Main(string[] args)
         {
-            var myList = new List<string> { "Hello" };
+            try
+            {
+                var names = new List<string> { "Peter", "John", "Douglas" };
 
-            myList.ForEach(Console.WriteLine);
-
-            myList.Add("World");
-
-            var newList = myList.Select(word => $"{word} XX").ToList();
-
-            newList.Add("!");
-
-            newList.ForEach(Console.WriteLine);
+                Console.WriteLine(names[3]); // Index out of bounds
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
     }
 }
