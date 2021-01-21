@@ -1,0 +1,12 @@
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook.DataAccess\bin\Debug\net5.0\BulkyBook.DataAccess.deps.json
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook.DataAccess\bin\Debug\net5.0\BulkyBook.DataAccess.dll
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook.DataAccess\bin\Debug\net5.0\ref\BulkyBook.DataAccess.dll
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook.DataAccess\bin\Debug\net5.0\BulkyBook.DataAccess.pdb
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook.DataAccess\obj\Debug\net5.0\BulkyBook.DataAccess.csprojAssemblyReference.cache
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook.DataAccess\obj\Debug\net5.0\BulkyBook.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook.DataAccess\obj\Debug\net5.0\BulkyBook.DataAccess.AssemblyInfoInputs.cache
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook.DataAccess\obj\Debug\net5.0\BulkyBook.DataAccess.AssemblyInfo.cs
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook.DataAccess\obj\Debug\net5.0\BulkyBook.DataAccess.csproj.CoreCompileInputs.cache
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook.DataAccess\obj\Debug\net5.0\BulkyBook.DataAccess.dll
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook.DataAccess\obj\Debug\net5.0\ref\BulkyBook.DataAccess.dll
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook.DataAccess\obj\Debug\net5.0\BulkyBook.DataAccess.pdb

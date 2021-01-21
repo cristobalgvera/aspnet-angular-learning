@@ -2,6 +2,12 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BulkyBook", "BulkyBook\BulkyBook.csproj", "{9B87ED17-967C-40C6-8D7E-2F9FB09711AE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BulkyBook.DataAccess", "BulkyBook.DataAccess\BulkyBook.DataAccess.csproj", "{8BF16BF1-E531-46E2-854C-4CD28F18BE8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BulkyBook.Models", "BulkyBook.Models\BulkyBook.Models.csproj", "{46888096-58F3-4F06-B74D-B3F117AF9EA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BulkyBook.Utility", "BulkyBook.Utility\BulkyBook.Utility.csproj", "{74F4586A-4D32-44CB-840B-B65E443B41EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +18,17 @@ Global
 		{9B87ED17-967C-40C6-8D7E-2F9FB09711AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B87ED17-967C-40C6-8D7E-2F9FB09711AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B87ED17-967C-40C6-8D7E-2F9FB09711AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BF16BF1-E531-46E2-854C-4CD28F18BE8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BF16BF1-E531-46E2-854C-4CD28F18BE8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BF16BF1-E531-46E2-854C-4CD28F18BE8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BF16BF1-E531-46E2-854C-4CD28F18BE8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46888096-58F3-4F06-B74D-B3F117AF9EA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46888096-58F3-4F06-B74D-B3F117AF9EA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46888096-58F3-4F06-B74D-B3F117AF9EA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46888096-58F3-4F06-B74D-B3F117AF9EA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74F4586A-4D32-44CB-840B-B65E443B41EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74F4586A-4D32-44CB-840B-B65E443B41EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74F4586A-4D32-44CB-840B-B65E443B41EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74F4586A-4D32-44CB-840B-B65E443B41EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

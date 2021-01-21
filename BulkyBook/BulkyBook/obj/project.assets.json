@@ -535,6 +535,43 @@
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
         }
+      },
+      "BulkyBook.DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "BulkyBook.Models": "1.0.0",
+          "BulkyBook.Utility": "1.0.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.2",
+          "Microsoft.EntityFrameworkCore": "5.0.2",
+          "Microsoft.EntityFrameworkCore.Relational": "5.0.2"
+        },
+        "compile": {
+          "bin/placeholder/BulkyBook.DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BulkyBook.DataAccess.dll": {}
+        }
+      },
+      "BulkyBook.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/BulkyBook.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BulkyBook.Models.dll": {}
+        }
+      },
+      "BulkyBook.Utility/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/BulkyBook.Utility.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BulkyBook.Utility.dll": {}
+        }
       }
     }
   },
@@ -1442,10 +1479,28 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "BulkyBook.DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../BulkyBook.DataAccess/BulkyBook.DataAccess.csproj",
+      "msbuildProject": "../BulkyBook.DataAccess/BulkyBook.DataAccess.csproj"
+    },
+    "BulkyBook.Models/1.0.0": {
+      "type": "project",
+      "path": "../BulkyBook.Models/BulkyBook.Models.csproj",
+      "msbuildProject": "../BulkyBook.Models/BulkyBook.Models.csproj"
+    },
+    "BulkyBook.Utility/1.0.0": {
+      "type": "project",
+      "path": "../BulkyBook.Utility/BulkyBook.Utility.csproj",
+      "msbuildProject": "../BulkyBook.Utility/BulkyBook.Utility.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "BulkyBook.DataAccess >= 1.0.0",
+      "BulkyBook.Models >= 1.0.0",
+      "BulkyBook.Utility >= 1.0.0",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 5.0.2",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 5.0.2",
       "Microsoft.AspNetCore.Identity.UI >= 5.0.2",
@@ -1483,7 +1538,17 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\crist\\Documents\\Repositorios\\aspnet-angular-learning\\BulkyBook\\BulkyBook.DataAccess\\BulkyBook.DataAccess.csproj": {
+              "projectPath": "D:\\crist\\Documents\\Repositorios\\aspnet-angular-learning\\BulkyBook\\BulkyBook.DataAccess\\BulkyBook.DataAccess.csproj"
+            },
+            "D:\\crist\\Documents\\Repositorios\\aspnet-angular-learning\\BulkyBook\\BulkyBook.Models\\BulkyBook.Models.csproj": {
+              "projectPath": "D:\\crist\\Documents\\Repositorios\\aspnet-angular-learning\\BulkyBook\\BulkyBook.Models\\BulkyBook.Models.csproj"
+            },
+            "D:\\crist\\Documents\\Repositorios\\aspnet-angular-learning\\BulkyBook\\BulkyBook.Utility\\BulkyBook.Utility.csproj": {
+              "projectPath": "D:\\crist\\Documents\\Repositorios\\aspnet-angular-learning\\BulkyBook\\BulkyBook.Utility\\BulkyBook.Utility.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
