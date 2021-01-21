@@ -1,0 +1,12 @@
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook.Utility\bin\Debug\net5.0\BulkyBook.Utility.deps.json
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook.Utility\bin\Debug\net5.0\BulkyBook.Utility.dll
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook.Utility\bin\Debug\net5.0\ref\BulkyBook.Utility.dll
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook.Utility\bin\Debug\net5.0\BulkyBook.Utility.pdb
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook.Utility\obj\Debug\net5.0\BulkyBook.Utility.csprojAssemblyReference.cache
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook.Utility\obj\Debug\net5.0\BulkyBook.Utility.GeneratedMSBuildEditorConfig.editorconfig
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook.Utility\obj\Debug\net5.0\BulkyBook.Utility.AssemblyInfoInputs.cache
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook.Utility\obj\Debug\net5.0\BulkyBook.Utility.AssemblyInfo.cs
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook.Utility\obj\Debug\net5.0\BulkyBook.Utility.csproj.CoreCompileInputs.cache
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook.Utility\obj\Debug\net5.0\BulkyBook.Utility.dll
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook.Utility\obj\Debug\net5.0\ref\BulkyBook.Utility.dll
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook.Utility\obj\Debug\net5.0\BulkyBook.Utility.pdb

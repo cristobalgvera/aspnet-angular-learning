@@ -10,3 +10,8 @@ D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook.Data
 D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook.DataAccess\obj\Debug\net5.0\BulkyBook.DataAccess.dll
 D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook.DataAccess\obj\Debug\net5.0\ref\BulkyBook.DataAccess.dll
 D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook.DataAccess\obj\Debug\net5.0\BulkyBook.DataAccess.pdb
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook.DataAccess\bin\Debug\net5.0\BulkyBook.Models.dll
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook.DataAccess\bin\Debug\net5.0\BulkyBook.Utility.dll
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook.DataAccess\bin\Debug\net5.0\BulkyBook.Models.pdb
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook.DataAccess\bin\Debug\net5.0\BulkyBook.Utility.pdb
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook.DataAccess\obj\Debug\net5.0\BulkyBook.DataAccess.csproj.CopyComplete

@@ -68,8 +68,6 @@ D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook\obj\
 D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook\obj\Debug\net5.0\BulkyBook.TagHelpers.output.cache
 D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook\obj\Debug\net5.0\BulkyBook.RazorCoreGenerate.cache
 D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
-D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
-D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
@@ -84,3 +82,9 @@ D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook\obj\
 D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook\obj\Debug\net5.0\ref\BulkyBook.dll
 D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook\obj\Debug\net5.0\BulkyBook.pdb
 D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook\obj\Debug\net5.0\BulkyBook.genruntimeconfig.cache
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook\bin\Debug\net5.0\BulkyBook.Utility.dll
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook\bin\Debug\net5.0\BulkyBook.Utility.pdb
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook\obj\Debug\net5.0\Razor\Areas\Customer\Views\Home\Index.cshtml.g.cs
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook\obj\Debug\net5.0\Razor\Areas\Customer\Views\Home\Privacy.cshtml.g.cs
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook\obj\Debug\net5.0\Razor\Areas\Customer\Views\_ViewImports.cshtml.g.cs
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook\obj\Debug\net5.0\Razor\Areas\Customer\Views\_ViewStart.cshtml.g.cs

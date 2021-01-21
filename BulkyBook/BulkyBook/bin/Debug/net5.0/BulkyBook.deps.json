@@ -27,6 +27,7 @@
         "dependencies": {
           "BulkyBook.DataAccess": "1.0.0",
           "BulkyBook.Models": "1.0.0",
+          "BulkyBook.Utility": "1.0.0",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "5.0.2",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.2",
           "Microsoft.AspNetCore.Identity.UI": "5.0.2",
@@ -765,6 +766,8 @@
       "System.Memory/4.5.3": {},
       "BulkyBook.DataAccess/1.0.0": {
         "dependencies": {
+          "BulkyBook.Models": "1.0.0",
+          "BulkyBook.Utility": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.2",
           "Microsoft.EntityFrameworkCore": "5.0.2",
           "Microsoft.EntityFrameworkCore.Relational": "5.0.2"
@@ -782,6 +785,14 @@
         },
         "compile": {
           "BulkyBook.Models.dll": {}
+        }
+      },
+      "BulkyBook.Utility/1.0.0": {
+        "runtime": {
+          "BulkyBook.Utility.dll": {}
+        },
+        "compile": {
+          "BulkyBook.Utility.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
@@ -2727,6 +2738,11 @@
       "sha512": ""
     },
     "BulkyBook.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BulkyBook.Utility/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

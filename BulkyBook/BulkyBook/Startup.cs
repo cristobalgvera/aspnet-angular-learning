@@ -1,12 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
 using BulkyBook.DataAccess.Data;
 using Microsoft.Extensions.Configuration;
@@ -64,7 +58,7 @@ namespace BulkyBook
             {
                 endpoints.MapControllerRoute(
                     "default",
-                    "{controller=Home}/{action=Index}/{id?}");
+                    "{area=Customer}/{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
         }
