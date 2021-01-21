@@ -388,3 +388,4 @@ D:\crist\Documents\Repositorios\aspnet-angular-learning\BookListRazor\BookListRa
 D:\crist\Documents\Repositorios\aspnet-angular-learning\BookListRazor\BookListRazor\obj\Debug\net5.0\Razor\Pages\BookList\Index.cshtml.g.cs
 D:\crist\Documents\Repositorios\aspnet-angular-learning\BookListRazor\BookListRazor\obj\Debug\net5.0\Razor\Pages\BookList\Create.cshtml.g.cs
 D:\crist\Documents\Repositorios\aspnet-angular-learning\BookListRazor\BookListRazor\obj\Debug\net5.0\Razor\Pages\BookList\Edit.cshtml.g.cs
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BookListRazor\BookListRazor\obj\Debug\net5.0\Razor\Pages\BookList\Upsert.cshtml.g.cs
