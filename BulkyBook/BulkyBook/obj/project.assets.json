@@ -1095,7 +1095,10 @@
         },
         "runtime": {
           "bin/placeholder/BulkyBook.DataAccess.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "BulkyBook.Models/1.0.0": {
         "type": "project",

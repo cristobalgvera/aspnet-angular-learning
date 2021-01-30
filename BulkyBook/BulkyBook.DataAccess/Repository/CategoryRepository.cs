@@ -16,10 +16,10 @@ namespace BulkyBook.DataAccess.Repository
 
         public void Update(Category category)
         {
-            var categoryFromDb = _dbContext.Categories.FirstOrDefault(cat => cat.Id == category.Id);
-            if (categoryFromDb == null) return;
-
-            categoryFromDb.Name = category.Name;
+            var categoryFromDb = _dbContext.Categories
+                .FirstOrDefault(cat => cat.Id == category.Id);
+            if (categoryFromDb != null)
+                categoryFromDb.Name = category.Name;
         }
     }
 }
