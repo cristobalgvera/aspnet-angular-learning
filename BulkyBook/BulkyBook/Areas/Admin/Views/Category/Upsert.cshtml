@@ -1,11 +1,10 @@
-﻿@model BulkyBook.Models.Category
+﻿@model Category
 
 @{
-    ViewBag.Title = "";
     Layout = "_Layout";
-
     var isEditing = Model.Id != 0;
     var title = $"{(isEditing ? "Edit" : "Create")} Category";
+    ViewBag.Title = title;
 }
 
 <form method="post">

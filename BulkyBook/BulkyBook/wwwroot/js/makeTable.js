@@ -1,13 +1,13 @@
 ﻿let dataTable;
 
-$(document).ready(() => {
-    loadDataTable();
-});
+$(document).ready(() => loadDataTable());
 
 function loadDataTable() {
+    const baseDir = location.pathname;
+
     dataTable = $('#tblData').DataTable({
         "ajax": {
-            "url": "/Admin/Category/GetAll"
+            "url": `${baseDir}/GetAll`
         },
         "columns": [
             {"data": "name", "width": "60%"},
@@ -16,10 +16,10 @@ function loadDataTable() {
                 "width": "40%",
                 "render": (id) => `
                     <div class="text-center">
-                        <a href="/Admin/Category/Upsert/${id}" class="btn btn-success text-white" style="cursor: pointer">
+                        <a href="${baseDir}/Upsert/${id}" class="btn btn-success text-white" style="cursor: pointer">
                             <i class="fas fa-edit"></i>
                         </a>
-                        <a onclick="deleteCategory('/Admin/Category/Delete/${id}')" class="btn btn-danger text-white" style="cursor: pointer">
+                        <a onclick="deleteThis('${baseDir}/Delete/${id}')" class="btn btn-danger text-white" style="cursor: pointer">
                             <i class="fas fa-trash-alt"></i>
                         </a>
                     </div>
@@ -29,9 +29,9 @@ function loadDataTable() {
     });
 }
 
-const deleteCategory = async (url) => {
+const deleteThis = async (url) => {
     const {isConfirmed} = await Swal.fire({
-        title: "Are you sure you want to delete this category?",
+        title: "Are you sure you want to delete this?",
         text: "You will not be able to restore the data",
         icon: "warning",
         showCancelButton: true,

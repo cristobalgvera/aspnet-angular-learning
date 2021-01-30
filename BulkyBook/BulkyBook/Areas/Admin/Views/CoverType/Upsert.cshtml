@@ -1,0 +1,10 @@
+﻿@model CoverType
+
+@{
+    Layout = "_Layout";
+    var isEditing = Model.Id != 0;
+    var title = $"{(isEditing ? "Edit" : "Create")} Category";
+    ViewBag.Title = title;
+}
+
+<h2>title</h2>

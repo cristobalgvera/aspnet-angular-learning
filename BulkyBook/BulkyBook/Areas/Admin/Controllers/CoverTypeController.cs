@@ -5,11 +5,11 @@ using Microsoft.AspNetCore.Mvc;
 namespace BulkyBook.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    public class CategoryController : Controller
+    public class CoverTypeController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
 
-        public CategoryController(IUnitOfWork unitOfWork)
+        public CoverTypeController(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
         }
@@ -18,36 +18,35 @@ namespace BulkyBook.Areas.Admin.Controllers
 
         public IActionResult Upsert(int? id)
         {
-            var category = new Category();
+            var coverType = new CoverType();
 
-            if (id == null)
-                return View(category);
+            if (id == null) return View(coverType);
 
-            category = _unitOfWork.CategoryRepository.Get(id.GetValueOrDefault());
+            coverType = _unitOfWork.CoverTypeRepository.Get(id.GetValueOrDefault());
 
-            if (category == null)
+            if (coverType == null)
                 return NotFound();
 
-            return View(category);
+            return View(coverType);
         }
 
         #region API CALLS
 
         [HttpGet]
         public IActionResult GetAll() =>
-            Json(new {data = _unitOfWork.CategoryRepository.GetAll()});
+            Json(new {data = _unitOfWork.CoverTypeRepository.GetAll()});
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Upsert(Category category)
+        public IActionResult Upsert(CoverType coverType)
         {
             if (!ModelState.IsValid)
                 return NotFound();
 
-            if (category.Id == 0)
-                _unitOfWork.CategoryRepository.Add(category);
+            if (coverType.Id == 0)
+                _unitOfWork.CoverTypeRepository.Add(coverType);
             else
-                _unitOfWork.CategoryRepository.Update(category);
+                _unitOfWork.CoverTypeRepository.Update(coverType);
 
             _unitOfWork.Save();
             return RedirectToAction(nameof(Index));
@@ -56,14 +55,14 @@ namespace BulkyBook.Areas.Admin.Controllers
         [HttpDelete]
         public IActionResult Delete(int id)
         {
-            var category = _unitOfWork.CategoryRepository.Get(id);
-            if (category == null)
+            var coverType = _unitOfWork.CoverTypeRepository.Get(id);
+            if (coverType == null)
                 return Json(new {success = false, message = "Error while deleting"});
 
-            _unitOfWork.CategoryRepository.Remove(category);
+            _unitOfWork.CoverTypeRepository.Remove(coverType);
             _unitOfWork.Save();
 
-            return Json(new {success = true, message = "Category successfully deleted"});
+            return Json(new {success = true, message = "Cover Type successfully deleted"});
         }
 
         #endregion
