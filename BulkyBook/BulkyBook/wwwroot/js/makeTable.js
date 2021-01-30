@@ -10,10 +10,10 @@ function loadDataTable() {
             "url": `${baseDir}/GetAll`
         },
         "columns": [
-            {"data": "name", "width": "60%"},
+            {"data": "name", "width": "67%"},
             {
                 "data": "id",
-                "width": "40%",
+                "width": "33%",
                 "render": (id) => `
                     <div class="text-center">
                         <a href="${baseDir}/Upsert/${id}" class="btn btn-success text-white" style="cursor: pointer">
