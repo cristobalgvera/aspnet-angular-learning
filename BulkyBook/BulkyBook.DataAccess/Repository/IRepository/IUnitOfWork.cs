@@ -6,5 +6,7 @@ namespace BulkyBook.DataAccess.Repository.IRepository
     {
         ICategoryRepository CategoryRepository { get; }
         ISpCall SpCall { get; }
+
+        void Save();
     }
 }
