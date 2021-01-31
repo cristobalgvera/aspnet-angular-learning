@@ -1,0 +1,22 @@
+﻿@{
+    const string title = "Product";
+    var viewDataDictionary = new ViewDataDictionary(ViewData)
+    {
+        {"pTitle", "Title"},
+        {"pIsbn", "ISBN"},
+        {"pPrice", "Price"},
+        {"pAuthor", "Author"},
+        {"pCategory", "Category"},
+    };
+    ViewBag.Title = title;
+    Layout = "_Layout";
+}
+
+<partial name="_ItemsTitle" model="title"/>
+
+<partial name="_ItemsTable" model="viewDataDictionary"/>
+
+@section Scripts
+{
+    <script src="~/js/productsTable.js"></script>
+}

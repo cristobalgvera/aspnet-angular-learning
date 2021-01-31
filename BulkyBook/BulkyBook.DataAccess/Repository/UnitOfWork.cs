@@ -9,6 +9,7 @@ namespace BulkyBook.DataAccess.Repository
         private readonly ApplicationDbContext _dbContext;
         public ICategoryRepository CategoryRepository { get; }
         public ICoverTypeRepository CoverTypeRepository { get; }
+        public IProductRepository ProductRepository { get; }
         public ISpCall SpCall { get; }
 
         public UnitOfWork(ApplicationDbContext dbContext)
@@ -17,6 +18,7 @@ namespace BulkyBook.DataAccess.Repository
             SpCall = new SpCall(dbContext);
             CategoryRepository = new CategoryRepository(dbContext);
             CoverTypeRepository = new CoverTypeRepository(dbContext);
+            ProductRepository = new ProductRepository(dbContext);
         }
 
         public void Dispose()

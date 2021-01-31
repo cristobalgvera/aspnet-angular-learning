@@ -424,3 +424,10 @@ D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook\obj\
 D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook\obj\Debug\net5.0\Razor\Views\Shared\_EditAndBackToListButtons.cshtml.g.cs
 D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook\obj\Debug\net5.0\Razor\Areas\Admin\Views\CoverType\Index.cshtml.g.cs
 D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook\obj\Debug\net5.0\Razor\Areas\Admin\Views\CoverType\Upsert.cshtml.g.cs
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook\obj\Debug\net5.0\Razor\Areas\Admin\Views\Product\Index.cshtml.g.cs
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook\obj\Debug\net5.0\Razor\Areas\Admin\Views\Product\Upsert.cshtml.g.cs
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook\obj\Debug\net5.0\Razor\Views\Shared\_ItemsTable.cshtml.g.cs
+D:\crist\Documents\Repositorios\aspnet-angular-learning\BulkyBook\BulkyBook\obj\Debug\net5.0\Razor\Views\Shared\_ItemsTitle.cshtml.g.cs
